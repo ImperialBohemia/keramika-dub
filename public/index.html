@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KERAMIKA DUB | Tradiční zahradní a užitková keramika od roku 1936</title>
-  <meta name="description" content="KERAMIKA DUB s.r.o. - Tradiční zahradní a užitková keramika a kamenina z Valašského Meziříčí. Sudy na zelí, sádláky, květináče, formy na pečení a výpal v peci na dřevo.">
+  <meta name="description" content="KERAMIKA DUB s.r.o. - Tradiční zahradní a užitková keramika z Valašského Meziříčí. Výroba kameninových sudů na zelí, sádláků, květináčů, pekáčů a váz pálených na 1 205 °C i v peci na dřevo.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Tailwind CSS Play CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -30,13 +30,6 @@
               800: '#5F3925',
               900: '#422719',
               950: '#27150C',
-            },
-            glaze: {
-              brown: '#6B3E26',
-              honey: '#C9822C',
-              sand: '#DFD2C4',
-              forest: '#3F4839',
-              slate: '#474D52'
             }
           },
           fontFamily: {
@@ -49,35 +42,56 @@
   </script>
 
   <style>
-    .artisan-pattern {
+    .artisan-texture {
       background-color: #FAF5F0;
       background-image: radial-gradient(rgba(148, 95, 62, 0.08) 1.2px, transparent 1.2px);
       background-size: 20px 20px;
     }
-    .clay-gradient {
-      background: linear-gradient(135deg, #422719 0%, #794A30 50%, #C9822C 100%);
+    .clay-nav-btn {
+      position: relative;
     }
-    .category-pill.active {
+    .clay-nav-btn::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #945F3E;
+      transition: width 0.2s ease;
+    }
+    .clay-nav-btn:hover::after {
+      width: 100%;
+    }
+    .cat-btn.active {
       background-color: #794A30 !important;
       color: #FFFFFF !important;
       border-color: #5F3925 !important;
-      box-shadow: 0 4px 12px rgba(121, 74, 48, 0.28);
+      box-shadow: 0 4px 10px rgba(121, 74, 48, 0.25);
     }
-    .group-tab.active {
-      border-bottom-color: #945F3E;
-      color: #794A30;
-      font-weight: 700;
+    /* Dropdown mega menu */
+    .dropdown-content {
+      display: none;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    .dropdown-group:hover .dropdown-content,
+    .dropdown-group:focus-within .dropdown-content {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
     }
   </style>
 </head>
 <body class="bg-clay-50 text-stone-800 font-sans antialiased flex flex-col min-h-screen">
 
-  <!-- Top bar s kontakty a autentickými údaji firmy -->
+  <!-- TOP INFO BAR -->
   <div class="bg-clay-950 text-clay-200 text-xs py-2 px-4 border-b border-clay-900">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-        <span class="font-medium tracking-wide">Tradiční výroba kameniny a zahradní keramiky od roku 1936 • Valašské Meziříčí</span>
+        <span class="font-medium tracking-wide">Tradiční zahradní a užitková keramika Dub • Od roku 1936 • Valašské Meziříčí</span>
       </div>
       <div class="flex items-center gap-5 text-xs font-semibold">
         <a href="tel:+420604309074" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
@@ -93,42 +107,97 @@
     </div>
   </div>
 
-  <!-- Hlavní navigace & Menu -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-clay-200 shadow-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      
-      <!-- Logo a název -->
-      <a href="#" class="flex items-center gap-3 group">
-        <div class="w-12 h-12 rounded-xl bg-clay-100 border border-clay-300 flex items-center justify-center p-1 shadow-inner group-hover:scale-105 transition-transform">
-          <img src="images/site/dub.gif" alt="Logo Keramika Dub" class="w-full h-full object-contain">
-        </div>
-        <div>
-          <span class="font-serif font-extrabold text-xl sm:text-2xl tracking-wider text-stone-900 uppercase block leading-tight">KERAMIKA DUB</span>
-          <span class="text-[11px] font-semibold text-clay-700 uppercase tracking-widest block">Zahradní a užitková keramika</span>
-        </div>
-      </a>
-
-      <!-- Desktop Navigace -->
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-stone-700">
-        <a href="#katalog" class="hover:text-clay-700 transition-colors">Katalog (25 kategorií)</a>
-        <a href="#o-firme" class="hover:text-clay-700 transition-colors">O firmě & Historie</a>
-        <a href="#obchod" class="hover:text-clay-700 transition-colors">Obchodní podmínky</a>
-        <a href="#cenik" class="hover:text-clay-700 transition-colors">Ceník</a>
-        <a href="#dokumenty" class="hover:text-clay-700 transition-colors">Dokumenty ke stažení</a>
-        <a href="#kontakty" class="hover:text-clay-700 transition-colors">Kontakty</a>
-      </nav>
-
-      <!-- CTA -->
-      <div class="flex items-center gap-3">
-        <a href="#katalog" class="inline-flex items-center gap-2 bg-clay-700 hover:bg-clay-800 text-white font-medium px-4 py-2.5 rounded-xl text-xs sm:text-sm shadow-md transition-all">
-          <span>Prohlédnout výrobky</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+  <!-- HLAVNÍ PROFI MENU & HEADER (Přesně 6 sekcí jako na původním webu s rozbalovacím katalogem) -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-clay-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-20 flex items-center justify-between">
+        
+        <!-- Brand / Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-xl bg-clay-100 border border-clay-300 flex items-center justify-center p-1 shadow-inner group-hover:scale-105 transition-transform">
+            <img src="images/site/dub.gif" alt="Logo Keramika Dub" class="w-full h-full object-contain">
+          </div>
+          <div>
+            <span class="font-serif font-extrabold text-xl sm:text-2xl tracking-wider text-stone-900 uppercase block leading-tight">KERAMIKA DUB</span>
+            <span class="text-[11px] font-semibold text-clay-700 uppercase tracking-widest block">Zahradní a užitková keramika</span>
+          </div>
         </a>
+
+        <!-- Desktop Navigation: 6 POLOŽEK PŘESNĚ DLE ORIGINÁLU -->
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-semibold text-stone-700">
+          
+          <!-- 1. Informace o firmě -->
+          <a href="#o-firme" class="clay-nav-btn hover:text-clay-700 transition-colors">
+            Informace o firmě
+          </a>
+
+          <!-- 2. Obchodní informace -->
+          <a href="#obchod" class="clay-nav-btn hover:text-clay-700 transition-colors">
+            Obchodní informace
+          </a>
+
+          <!-- 3. Katalog s Mega Menu všech 25 kategorií -->
+          <div class="relative dropdown-group py-6">
+            <button class="clay-nav-btn flex items-center gap-1.5 hover:text-clay-700 transition-colors focus:outline-none">
+              <span>Katalog</span>
+              <svg class="w-4 h-4 text-clay-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+
+            <!-- Dropdown Menu se všemi 25 kategoriemi -->
+            <div class="dropdown-content absolute left-1/2 -translate-x-1/2 top-full w-[820px] bg-white rounded-2xl shadow-2xl border border-clay-200 p-6 z-50">
+              <div class="flex items-center justify-between pb-3 mb-4 border-b border-clay-100">
+                <span class="font-serif font-bold text-sm text-stone-900">Všech 25 kategorií výrobků KERAMIKA DUB</span>
+                <a href="#katalog" onclick="filterCategory('all')" class="text-xs font-semibold text-clay-700 hover:text-clay-900">Zobrazit vše (152 položek) →</a>
+              </div>
+              <div class="grid grid-cols-3 gap-x-6 gap-y-2 text-xs" id="mega-menu-list">
+                <!-- Generováno skriptem ze seznamu 25 kategorií -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Ceník -->
+          <a href="#cenik" class="clay-nav-btn hover:text-clay-700 transition-colors">
+            Ceník
+          </a>
+
+          <!-- 5. Dokumenty ke stažení -->
+          <a href="#dokumenty" class="clay-nav-btn hover:text-clay-700 transition-colors">
+            Dokumenty ke stažení
+          </a>
+
+          <!-- 6. Kontakty -->
+          <a href="#kontakty" class="clay-nav-btn hover:text-clay-700 transition-colors">
+            Kontakty
+          </a>
+
+        </nav>
+
+        <!-- CTA & Mobilní tlačítko -->
+        <div class="flex items-center gap-3">
+          <a href="#katalog" class="hidden sm:inline-flex items-center gap-2 bg-clay-700 hover:bg-clay-800 text-white font-medium px-4 py-2.5 rounded-xl text-xs sm:text-sm shadow-md transition-all">
+            <span>Katalog</span>
+            <span>↓</span>
+          </a>
+          <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl bg-clay-100 text-clay-800 hover:bg-clay-200 focus:outline-none" aria-label="Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobilní rozbalovací Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-clay-200 space-y-2">
+        <a href="#o-firme" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-semibold text-stone-800 hover:bg-clay-100">Informace o firmě</a>
+        <a href="#obchod" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-semibold text-stone-800 hover:bg-clay-100">Obchodní informace</a>
+        <a href="#katalog" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-semibold text-stone-800 hover:bg-clay-100">Katalog (25 kategorií)</a>
+        <a href="#cenik" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-semibold text-stone-800 hover:bg-clay-100">Ceník</a>
+        <a href="#dokumenty" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-semibold text-stone-800 hover:bg-clay-100">Dokumenty ke stažení</a>
+        <a href="#kontakty" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg font-semibold text-stone-800 hover:bg-clay-100">Kontakty</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section s autentickou historickou a produktovou grafikou -->
+  <!-- HERO SEKCE -->
   <section class="relative bg-clay-900 text-white overflow-hidden py-16 lg:py-24">
     <div class="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-overlay" style="background-image: url('images/site/keramika3.jpg');"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -136,7 +205,7 @@
         
         <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-clay-800 border border-clay-700 text-clay-300 text-xs font-semibold tracking-wider uppercase">
-            <span>🔥</span> Výpal na 1 205 °C & pec na dřevo
+            <span>🔥</span> Valašská kamenina pálená na 1.205 °C & pec na dřevo
           </div>
           <h1 class="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-clay-50 leading-[1.2]">
             Zahradní a užitková keramika Dub
@@ -147,14 +216,13 @@
 
           <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4">
             <a href="#katalog" class="px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-sm shadow-lg shadow-amber-600/30 transition-all">
-              Otevřít katalog výrobků (152 položek)
+              Prohlédnout katalog (152 položek)
             </a>
             <a href="#kontakty" class="px-6 py-3 rounded-xl bg-clay-800 hover:bg-clay-700 border border-clay-600 text-clay-100 font-semibold text-sm transition-all">
               Kontakt & Provozovna
             </a>
           </div>
 
-          <!-- Klíčové pilíře -->
           <div class="grid grid-cols-3 gap-4 pt-6 border-t border-clay-800 text-left">
             <div>
               <p class="font-serif text-2xl sm:text-3xl font-extrabold text-amber-400">1936</p>
@@ -162,16 +230,15 @@
             </div>
             <div>
               <p class="font-serif text-2xl sm:text-3xl font-extrabold text-amber-400">1.205 °C</p>
-              <p class="text-xs text-clay-300">Teplota výpalu kameniny</p>
+              <p class="text-xs text-clay-300">Výpal kameniny</p>
             </div>
             <div>
               <p class="font-serif text-2xl sm:text-3xl font-extrabold text-amber-400">3. generace</p>
-              <p class="text-xs text-clay-300">Hrnčířské rodinné tradice</p>
+              <p class="text-xs text-clay-300">Hrnčířské tradice</p>
             </div>
           </div>
         </div>
 
-        <!-- Koláž z reálných fotek původního webu -->
         <div class="lg:col-span-5 grid grid-cols-2 gap-3.5">
           <div class="space-y-3.5">
             <div class="rounded-xl overflow-hidden border border-clay-700 aspect-[4/3] bg-clay-950 shadow-md">
@@ -196,53 +263,43 @@
   </section>
 
   <!-- KATALOG SEKCE (Kompletní 25 kategorií ze zdrojového webu) -->
-  <section id="katalog" class="py-16 artisan-pattern border-b border-clay-200">
+  <section id="katalog" class="py-16 artisan-texture border-b border-clay-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Hlavička sekce -->
       <div class="text-center max-w-3xl mx-auto mb-10">
         <span class="text-xs font-bold uppercase tracking-widest text-clay-700 bg-clay-200/80 px-3.5 py-1.5 rounded-full border border-clay-300">
-          Oficiální sortiment
+          Sortiment
         </span>
         <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-stone-900 mt-3">
           Katalog výrobků KERAMIKA DUB
         </h2>
         <p class="text-stone-600 text-sm sm:text-base mt-2">
-          Kompletní přehled všech 25 kategorií a 152 produktových položek přesně podle firemní nabídky. Všechny fotografie pochází z naší dílny.
+          Kompletní nabídka 25 kategorií a 152 kameninových produktů přesně dle originální nabídky dílny.
         </p>
       </div>
 
-      <!-- Filtry a Skupiny -->
-      <div class="space-y-4 mb-8">
+      <!-- Filtrování a vyhledávání -->
+      <div class="space-y-5 mb-8">
         
-        <!-- Vyhledávání v katalogu -->
+        <!-- Vyhledávání -->
         <div class="max-w-lg mx-auto relative">
-          <input type="text" id="catalog-search" placeholder="Hledat v katalogu (sud, zelák, buclák, žardenka, beránek, pekáč)..." 
+          <input type="text" id="catalog-search" placeholder="Hledat v katalogu (např. sud, zelák, buclák, pekáč, žardenka)..." 
                  class="w-full pl-11 pr-10 py-3 rounded-xl border border-clay-300 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-clay-600 text-sm">
           <svg class="w-5 h-5 text-stone-400 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-          <button id="clear-search-btn" class="hidden absolute right-3 top-3 text-stone-400 hover:text-stone-600 text-sm" onclick="clearSearch()">✕</button>
+          <button id="clear-search-btn" class="hidden absolute right-3 top-3 text-stone-400 hover:text-stone-600 text-sm font-bold" onclick="clearSearch()">✕</button>
         </div>
 
-        <!-- Nadřazené skupiny pro snadnou navigaci -->
-        <div class="flex items-center justify-center flex-wrap gap-2 pt-2 border-b border-clay-200 pb-3" id="super-groups">
-          <button onclick="filterGroup('all')" class="group-tab active px-3.5 py-1.5 text-xs uppercase tracking-wider font-semibold border-b-2 border-clay-700">Vše (<span id="total-badge">152</span>)</button>
-          <button onclick="filterGroup('sudy')" class="group-tab px-3.5 py-1.5 text-xs uppercase tracking-wider font-semibold border-b-2 border-transparent text-stone-600 hover:text-clay-700">Sudy, sádláky & hrnce</button>
-          <button onclick="filterGroup('kvetinace')" class="group-tab px-3.5 py-1.5 text-xs uppercase tracking-wider font-semibold border-b-2 border-transparent text-stone-600 hover:text-clay-700">Květináče & Žardenky</button>
-          <button onclick="filterGroup('peceni')" class="group-tab px-3.5 py-1.5 text-xs uppercase tracking-wider font-semibold border-b-2 border-transparent text-stone-600 hover:text-clay-700">Pečení & Kuchyně</button>
-          <button onclick="filterGroup('zahrada')" class="group-tab px-3.5 py-1.5 text-xs uppercase tracking-wider font-semibold border-b-2 border-transparent text-stone-600 hover:text-clay-700">Zahrada, krmítka & vázy</button>
-        </div>
-
-        <!-- Pills všech 25 kategorií -->
-        <div class="flex items-center justify-center flex-wrap gap-1.5 pt-1" id="category-pills">
-          <!-- Dynamically populated -->
+        <!-- Seznam kategorií (Pills) -->
+        <div class="flex items-center justify-center flex-wrap gap-1.5" id="category-pills">
+          <!-- Naplněno dynamicky skriptem -->
         </div>
 
       </div>
 
-      <!-- Počítadlo výsledků -->
+      <!-- Informace o počtu položek -->
       <div class="flex items-center justify-between text-xs text-stone-500 mb-6 px-1">
-        <span id="results-count">Zobrazeno 152 položek</span>
-        <span class="text-clay-700 font-medium">Klikněte na jakýkoliv výrobek pro zvětšení a detail</span>
+        <span id="results-count" class="font-medium text-stone-700">Zobrazeno 152 položek</span>
+        <span class="text-clay-700 font-medium hidden sm:inline">Klikněte na jakýkoliv výrobek pro detail</span>
       </div>
 
       <!-- Mřížka výrobků -->
@@ -250,24 +307,23 @@
         <!-- Renderováno skriptem -->
       </div>
 
-      <!-- Nenalezeno -->
+      <!-- Prázdný stav -->
       <div id="catalog-empty" class="hidden text-center py-16 bg-white rounded-2xl border border-clay-200 p-8">
         <p class="font-serif text-lg font-bold text-stone-800">Pro zadané hledání nebyl nalezen žádný výrobek</p>
         <p class="text-xs text-stone-500 mt-1">Zkuste zadat jiný výraz nebo resetovat výběr kategorie.</p>
-        <button onclick="resetFilters()" class="mt-4 px-4 py-2 rounded-lg bg-clay-700 text-white text-xs font-semibold hover:bg-clay-800">
-          Zobrazit celý katalog
+        <button onclick="filterCategory('all')" class="mt-4 px-4 py-2 rounded-lg bg-clay-700 text-white text-xs font-semibold hover:bg-clay-800">
+          Zobrazit všechny výrobky
         </button>
       </div>
 
     </div>
   </section>
 
-  <!-- O FIRMĚ & HISTORIE (Autentický kompletní text ze sekce info_firma) -->
+  <!-- 1. INFORMACE O FIRMĚ & HISTORIE -->
   <section id="o-firme" class="py-16 bg-white border-b border-clay-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
-        <!-- Vizuální část - historická fotodokumentace dílny -->
         <div class="lg:col-span-5 space-y-4">
           <div class="rounded-2xl overflow-hidden border border-clay-200 shadow-md bg-clay-100 aspect-[4/3]">
             <img src="images/site/deda1.jpg" alt="Výroba keramiky Valašské Meziříčí" class="w-full h-full object-cover">
@@ -282,13 +338,12 @@
           </div>
         </div>
 
-        <!-- Autentický text z webu -->
         <div class="lg:col-span-7 space-y-5">
           <span class="text-xs font-bold uppercase tracking-widest text-clay-700 bg-clay-100 px-3.5 py-1.5 rounded-full border border-clay-300">
-            Přímo od zakladatelů
+            1. Sekce
           </span>
           <h2 class="font-serif text-3xl font-extrabold text-stone-900 leading-tight">
-            Informace o firmě & Historie
+            Informace o firmě
           </h2>
 
           <div class="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed">
@@ -300,22 +355,21 @@
             </p>
           </div>
 
-          <!-- Klíčová výrobní specifika -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <div class="p-4 rounded-xl bg-clay-50 border border-clay-200 space-y-1.5">
               <div class="flex items-center gap-2 font-serif font-bold text-stone-900 text-sm">
                 <span class="text-base text-amber-700">🌡️</span>
-                Výpal na vysokou teplotu 1.205 °C
+                Výpal na 1.205 °C (Kamenina)
               </div>
               <p class="text-xs text-stone-600 leading-relaxed">
-                Všechny výrobky jsou páleny vysokou teplotou <strong>1.205 °C</strong> a díky tomu můžeme naši keramiku označit jako <strong>kameninu</strong> s vysokou mechanickou pevností a odolností.
+                Všechny výrobky jsou páleny vysokou teplotou <strong>1.205 °C</strong> a díky tomu můžeme naši keramiku označit jako <strong>kameninu</strong> s vysokou mechanickou pevností a minimální nasákavostí.
               </p>
             </div>
 
             <div class="p-4 rounded-xl bg-clay-50 border border-clay-200 space-y-1.5">
               <div class="flex items-center gap-2 font-serif font-bold text-stone-900 text-sm">
                 <span class="text-base text-amber-700">🪵</span>
-                Pec na dřevo (2× ročně)
+                Výpal v peci na dřevo (2× ročně)
               </div>
               <p class="text-xs text-stone-600 leading-relaxed">
                 Výrobky jsou vypalovány v elektrických pecích, ale používáme také <strong>pec na dřevo</strong>. K výpalu v peci na dřevo dochází zhruba <strong>dvakrát do roka</strong>, přičemž výrobky takto pálené vynikají jedinečným zabarvením, které nejde nahradit žádným jiným typem glazury ani jinou technikou výpalu.
@@ -329,25 +383,24 @@
     </div>
   </section>
 
-  <!-- OBCHODNÍ INFORMACE (Přesně podle webu sekce info_obchod) -->
-  <section id="obchod" class="py-16 artisan-pattern border-b border-clay-200">
+  <!-- 2. OBCHODNÍ INFORMACE -->
+  <section id="obchod" class="py-16 artisan-texture border-b border-clay-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-10">
         <span class="text-xs font-bold uppercase tracking-widest text-clay-700 bg-clay-200/80 px-3.5 py-1.5 rounded-full border border-clay-300">
-          Pravidla prodeje
+          2. Sekce
         </span>
         <h2 class="font-serif text-3xl font-extrabold text-stone-900 mt-3">
           Obchodní informace
         </h2>
         <p class="text-stone-600 text-sm mt-1">
-          Přesné podmínky odběru, plateb, termínů dodání a dopravy stanovené KERAMIKOU DUB s.r.o.
+          Podmínky plateb, dodání, slev a dopravy KERAMIKY DUB s.r.o.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Platební podmínky -->
         <div class="bg-white p-6 rounded-2xl border border-clay-200 shadow-sm space-y-3">
           <div class="w-10 h-10 rounded-xl bg-clay-100 text-clay-800 flex items-center justify-center font-bold text-lg">
             💵
@@ -365,12 +418,11 @@
           </ul>
         </div>
 
-        <!-- Poskytované slevy & Minimální odběr -->
         <div class="bg-white p-6 rounded-2xl border border-clay-200 shadow-sm space-y-3">
           <div class="w-10 h-10 rounded-xl bg-clay-100 text-clay-800 flex items-center justify-center font-bold text-lg">
             🏷️
           </div>
-          <h3 class="font-serif font-bold text-stone-900 text-base">Slevy & Minimální odběr</h3>
+          <h3 class="font-serif font-bold text-stone-900 text-base">Poskytované slevy & Minimální odběr</h3>
           <ul class="text-xs text-stone-600 space-y-2 leading-relaxed">
             <li class="flex items-start gap-2">
               <span class="text-clay-700 font-bold">•</span>
@@ -383,7 +435,6 @@
           </ul>
         </div>
 
-        <!-- Termín dodání -->
         <div class="bg-white p-6 rounded-2xl border border-clay-200 shadow-sm space-y-3">
           <div class="w-10 h-10 rounded-xl bg-clay-100 text-clay-800 flex items-center justify-center font-bold text-lg">
             📦
@@ -401,7 +452,6 @@
           </ul>
         </div>
 
-        <!-- Způsob dodání zboží -->
         <div class="bg-white p-6 rounded-2xl border border-clay-200 shadow-sm space-y-3">
           <div class="w-10 h-10 rounded-xl bg-clay-100 text-clay-800 flex items-center justify-center font-bold text-lg">
             🚛
@@ -419,7 +469,6 @@
           </ul>
         </div>
 
-        <!-- Řešení reklamací -->
         <div class="bg-white p-6 rounded-2xl border border-clay-200 shadow-sm space-y-3">
           <div class="w-10 h-10 rounded-xl bg-clay-100 text-clay-800 flex items-center justify-center font-bold text-lg">
             ⚖️
@@ -432,17 +481,16 @@
             </li>
             <li class="flex items-start gap-2">
               <span class="text-clay-700 font-bold">•</span>
-              <span>Korektní a rychlé vyřízení v případě jakýchkoliv dotazů či vad</span>
+              <span>Korektní a spolehlivé jednání při jakýchkoliv dotazech</span>
             </li>
           </ul>
         </div>
 
-        <!-- Rychlá poptávka -->
         <div class="bg-clay-800 text-white p-6 rounded-2xl shadow-sm space-y-3 flex flex-col justify-between">
           <div>
             <h3 class="font-serif font-bold text-base text-amber-400">Objednávky zboží</h3>
             <p class="text-xs text-clay-200 mt-2 leading-relaxed">
-              Máte vybráno? Pošlete nám seznam položek na oficiální e-mail nebo zavolejte přímo vedoucímu výroby.
+              Objednávky zasílejte na e-mailovou adresu nebo volejte do naší provozovny.
             </p>
           </div>
           <a href="mailto:prodej@keramika-dub.cz" class="w-full text-center py-2.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold text-xs transition-colors">
@@ -455,79 +503,73 @@
     </div>
   </section>
 
-  <!-- CENÍK & DOKUMENTY KE STAŽENÍ -->
+  <!-- 4. CENÍK & 5. DOKUMENTY KE STAŽENÍ -->
   <section id="cenik" class="py-16 bg-white border-b border-clay-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
         
-        <!-- Sekce Ceník -->
+        <!-- Ceník -->
         <div class="lg:col-span-5 space-y-4">
           <span class="text-xs font-bold uppercase tracking-widest text-clay-700 bg-clay-100 px-3.5 py-1.5 rounded-full border border-clay-300">
-            Ceník
+            4. Sekce
           </span>
           <h2 class="font-serif text-2xl sm:text-3xl font-extrabold text-stone-900">
-            Ceník výrobků
+            Ceník
           </h2>
           <div class="p-6 rounded-2xl bg-clay-50 border border-clay-200 space-y-3">
             <div class="flex items-center gap-2 text-stone-800 font-medium text-sm">
               <span class="text-amber-700 font-bold text-base">ℹ️</span>
-              <span>Stav ceníku: <strong>Aktuální ceník na vyžádání</strong></span>
+              <span>Ceník: <strong>Připravujeme / individuální nabídka</strong></span>
             </div>
             <p class="text-xs text-stone-600 leading-relaxed">
-              Podle oficiální informace výrobce: <em>„Ceník připravujeme / poskytujeme individuálně při osobním jednání dle objemu odběru.“</em>
-            </p>
-            <p class="text-xs text-stone-600 leading-relaxed">
-              Rádi vám zašleme obratem kalkulaci pro konkrétní požadované velikosti a počty kusů.
+              Přesně dle zdrojového webu keramika-dub.cz: Ceník poskytujeme na vyžádání dle požadovaných rozměrů a odebraného množství.
             </p>
             <div class="pt-2">
-              <a href="mailto:prodej@keramika-dub.cz?subject=Poptávka%20ceníku%20KERAMIKA%20DUB" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-clay-700 hover:bg-clay-800 text-white text-xs font-semibold transition-colors">
-                <span>Vyžádat aktuální ceník</span>
+              <a href="mailto:prodej@keramika-dub.cz?subject=Poptávka%20ceníku%20KERAMIKA%20DUB" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-clay-700 hover:bg-clay-800 text-white text-xs font-semibold transition-colors">
+                <span>Poptat aktuální ceník zboží</span>
                 <span>✉️</span>
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Sekce Dokumenty ke stažení -->
+        <!-- Dokumenty ke stažení -->
         <div id="dokumenty" class="lg:col-span-7 space-y-4">
           <span class="text-xs font-bold uppercase tracking-widest text-clay-700 bg-clay-100 px-3.5 py-1.5 rounded-full border border-clay-300">
-            Ke stažení
+            5. Sekce
           </span>
           <h2 class="font-serif text-2xl sm:text-3xl font-extrabold text-stone-900">
             Dokumenty ke stažení
           </h2>
           <p class="text-xs text-stone-600">
-            Oficiální právní a certifikační dokumentace uložená a dostupná přímo na webu KERAMIKA DUB s.r.o.
+            Veškeré oficiální listiny zveřejněné společností KERAMIKA DUB s.r.o.
           </p>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
             
-            <!-- Živnostenský list -->
             <a href="dokumenty/zivnost_velky.jpg" target="_blank" class="p-4 rounded-xl border border-clay-200 hover:border-clay-400 bg-clay-50/60 hover:bg-clay-50 transition-all flex items-start gap-3.5 group">
               <div class="w-10 h-10 rounded-lg bg-clay-200 group-hover:bg-clay-300 text-clay-800 flex items-center justify-center shrink-0 font-bold text-sm">
                 📄
               </div>
               <div>
                 <h4 class="font-serif font-bold text-stone-900 text-sm group-hover:text-clay-700 transition-colors">Kopie živnostenského listu</h4>
-                <p class="text-xs text-stone-500 mt-0.5">Oficiální oprávnění k podnikání</p>
-                <span class="text-[11px] font-semibold text-clay-700 mt-1.5 inline-block">Stáhnout / Zobrazit zde →</span>
+                <p class="text-xs text-stone-500 mt-0.5">Originální živnostenské oprávnění</p>
+                <span class="text-[11px] font-semibold text-clay-700 mt-1 inline-block">Ke stažení zde →</span>
               </div>
             </a>
 
-            <!-- Osvědčení o registraci -->
             <a href="dokumenty/osvedceni.jpg" target="_blank" class="p-4 rounded-xl border border-clay-200 hover:border-clay-400 bg-clay-50/60 hover:bg-clay-50 transition-all flex items-start gap-3.5 group">
               <div class="w-10 h-10 rounded-lg bg-clay-200 group-hover:bg-clay-300 text-clay-800 flex items-center justify-center shrink-0 font-bold text-sm">
                 📑
               </div>
               <div>
                 <h4 class="font-serif font-bold text-stone-900 text-sm group-hover:text-clay-700 transition-colors">Osvědčení o registraci</h4>
-                <p class="text-xs text-stone-500 mt-0.5">Registrace plátce daně (DIČ)</p>
-                <span class="text-[11px] font-semibold text-clay-700 mt-1.5 inline-block">Stáhnout / Zobrazit zde →</span>
+                <p class="text-xs text-stone-500 mt-0.5">Registrace plátce daně DIČ</p>
+                <span class="text-[11px] font-semibold text-clay-700 mt-1 inline-block">Ke stažení zde →</span>
               </div>
             </a>
 
-            <!-- Prohlášení o shodě -->
             <a href="dokumenty/prohlaseni_o_shode.pdf" target="_blank" class="p-4 rounded-xl border border-clay-200 hover:border-clay-400 bg-clay-50/60 hover:bg-clay-50 transition-all flex items-start gap-3.5 group">
               <div class="w-10 h-10 rounded-lg bg-clay-200 group-hover:bg-clay-300 text-clay-800 flex items-center justify-center shrink-0 font-bold text-sm">
                 📜
@@ -535,19 +577,18 @@
               <div>
                 <h4 class="font-serif font-bold text-stone-900 text-sm group-hover:text-clay-700 transition-colors">Prohlášení o shodě</h4>
                 <p class="text-xs text-stone-500 mt-0.5">Shoda výrobků s normami (PDF)</p>
-                <span class="text-[11px] font-semibold text-clay-700 mt-1.5 inline-block">Stáhnout / Zobrazit zde →</span>
+                <span class="text-[11px] font-semibold text-clay-700 mt-1 inline-block">Ke stažení zde →</span>
               </div>
             </a>
 
-            <!-- Atest -->
             <div class="p-4 rounded-xl border border-stone-200 bg-stone-50 flex items-start gap-3.5 opacity-80">
               <div class="w-10 h-10 rounded-lg bg-stone-200 text-stone-600 flex items-center justify-center shrink-0 font-bold text-sm">
                 ⏳
               </div>
               <div>
                 <h4 class="font-serif font-bold text-stone-700 text-sm">Atest</h4>
-                <p class="text-xs text-stone-500 mt-0.5">Laboratorní hygienické atesty</p>
-                <span class="text-[11px] font-medium text-stone-500 mt-1.5 inline-block">Dle webu: Připravujeme</span>
+                <p class="text-xs text-stone-500 mt-0.5">Hygienické atesty</p>
+                <span class="text-[11px] font-medium text-stone-500 mt-1 inline-block">Dle webu: Připravujeme</span>
               </div>
             </div>
 
@@ -560,25 +601,24 @@
     </div>
   </section>
 
-  <!-- KONTAKTY (Kompletní přesné údaje ze sekce kontakty) -->
-  <section id="kontakty" class="py-16 artisan-pattern">
+  <!-- 6. KONTAKTY -->
+  <section id="kontakty" class="py-16 artisan-texture">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-10">
         <span class="text-xs font-bold uppercase tracking-widest text-clay-700 bg-clay-200/80 px-3.5 py-1.5 rounded-full border border-clay-300">
-          Spojení
+          6. Sekce
         </span>
         <h2 class="font-serif text-3xl font-extrabold text-stone-900 mt-3">
-          Kontakty & Provozovna
+          Kontakty
         </h2>
         <p class="text-stone-600 text-sm mt-1">
-          Jsme připraveni zodpovědět veškeré dotazy ohledně sortimentu kameniny a odběrních podmínek.
+          KERAMIKA DUB s.r.o. • Valašské Meziříčí
         </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         
-        <!-- Levý sloupec: Adresa, telefony, e-mail a mapa -->
         <div class="lg:col-span-6 space-y-5">
           
           <div class="bg-white p-6 rounded-2xl border border-clay-200 shadow-sm space-y-4">
@@ -595,7 +635,6 @@
               </div>
             </div>
 
-            <!-- Kontakty -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
               <a href="tel:+420604309074" class="p-3.5 rounded-xl bg-clay-50 hover:bg-clay-100 border border-clay-200 transition-colors block">
                 <span class="text-[10px] font-bold uppercase tracking-wider text-stone-500">Mobilní telefon</span>
@@ -612,10 +651,9 @@
                 <span class="text-[10px] font-bold uppercase tracking-wider text-stone-500 block">Objednávky zboží</span>
                 <span class="font-bold text-clay-800 text-base">prodej@keramika-dub.cz</span>
               </div>
-              <span class="text-clay-600 font-semibold text-xs">Napsat e-mail →</span>
+              <span class="text-clay-600 font-semibold text-xs">Odeslat e-mail →</span>
             </a>
 
-            <!-- Orientační plánek z webu -->
             <div class="pt-2">
               <span class="text-[11px] font-bold uppercase tracking-wider text-stone-500 block mb-2">Mapka provozovny:</span>
               <div class="rounded-xl overflow-hidden border border-clay-200 bg-white p-2">
@@ -625,7 +663,6 @@
 
           </div>
 
-          <!-- Sídlo firmy -->
           <div class="bg-white p-6 rounded-2xl border border-clay-200 shadow-sm text-xs text-stone-600 space-y-2">
             <h4 class="font-serif font-bold text-stone-900 text-sm uppercase tracking-wide">Sídlo firmy</h4>
             <p><strong>Obchodní název:</strong> KERAMIKA DUB s.r.o.</p>
@@ -638,14 +675,13 @@
 
         </div>
 
-        <!-- Pravý sloupec: Poptávkový a objednávkový formulář -->
         <div class="lg:col-span-6">
           <div class="bg-white p-6 sm:p-8 rounded-2xl border border-clay-200 shadow-sm">
             <h3 class="font-serif font-bold text-xl text-stone-900">
               Rychlý dotaz / Nezávazná poptávka
             </h3>
             <p class="text-xs text-stone-600 mt-1 mb-6">
-              Máte dotaz k dostupnosti sudů, pekáčů nebo zájem o velkoobchodní ceník? Vyplňte formulář níže.
+              Napište nám svůj dotaz k dostupnosti sudů, pekáčů nebo zájem o velkoobchodní odběr.
             </p>
 
             <form id="inquiry-form" onsubmit="handleInquiry(event)" class="space-y-4">
@@ -670,9 +706,9 @@
                 <select class="w-full px-3.5 py-2.5 rounded-xl border border-clay-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-clay-600 bg-white">
                   <option>Sud na zelí / Poklice na zeláky</option>
                   <option>Sádláky a mléčné hrnce</option>
-                  <option>Květináče a žardenky (strukturované / glazované)</option>
+                  <option>Květináče a žardenky</option>
                   <option>Formy na pečení a kastroly</option>
-                  <option>Dózy na potraviny a bucláky</option>
+                  <option>Dózy na potraviny a hrnky</option>
                   <option>Krmítka pro ptáky a zvířata</option>
                   <option>Vázy, amfory, košíky s uchem</option>
                   <option>Velkoobchodní odběr / Jiné</option>
@@ -680,7 +716,7 @@
               </div>
 
               <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Upřesnění poptávky / Počet kusů</label>
+                <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Zpráva / Počet kusů</label>
                 <textarea rows="3" placeholder="Uveďte předpokládaný objem v litrech nebo počet kusů..." class="w-full px-3.5 py-2.5 rounded-xl border border-clay-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-clay-600"></textarea>
               </div>
 
@@ -718,7 +754,7 @@
           <p id="modal-details" class="text-stone-600 font-mono"></p>
         </div>
         <p class="text-xs text-stone-500 leading-relaxed">
-          Tradiční výrobek z Valašského Meziříčí vypalovaný při 1.205 °C. Kamenina odolná proti mechanickému poškození a kyselému prostředí (zelí, mléko, sádlo).
+          Tradiční valašská kamenina vypalovaná při 1.205 °C. Vysoce odolná proti mechanickému poškození a kyselému prostředí.
         </p>
         <div class="pt-3 border-t border-clay-100 flex items-center justify-between">
           <span class="text-xs text-stone-500">KERAMIKA DUB s.r.o.</span>
@@ -751,22 +787,22 @@
         <div>
           <h4 class="font-serif font-bold text-xs uppercase text-white tracking-widest mb-3">Výrobní sortiment</h4>
           <ul class="text-xs space-y-1.5 text-clay-400">
-            <li><a href="#katalog" class="hover:text-amber-400">Sudy na zelí a poklice</a></li>
-            <li><a href="#katalog" class="hover:text-amber-400">Květináče a žardenky</a></li>
-            <li><a href="#katalog" class="hover:text-amber-400">Formy na pečení & kastroly</a></li>
-            <li><a href="#katalog" class="hover:text-amber-400">Sádláky a mléčné hrnce</a></li>
-            <li><a href="#katalog" class="hover:text-amber-400">Dózy na potraviny a hrnky</a></li>
+            <li><a href="#katalog" onclick="filterCategory('sud_na_zeli')" class="hover:text-amber-400">Sudy na zelí a poklice</a></li>
+            <li><a href="#katalog" onclick="filterCategory('kvetinace_glazovane')" class="hover:text-amber-400">Květináče a žardenky</a></li>
+            <li><a href="#katalog" onclick="filterCategory('formy_na_peceni')" class="hover:text-amber-400">Formy na pečení & kastroly</a></li>
+            <li><a href="#katalog" onclick="filterCategory('sadlaky')" class="hover:text-amber-400">Sádláky a mléčné hrnce</a></li>
+            <li><a href="#katalog" onclick="filterCategory('hrnky')" class="hover:text-amber-400">Dózy na potraviny a hrnky</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="font-serif font-bold text-xs uppercase text-white tracking-widest mb-3">Informace</h4>
           <ul class="text-xs space-y-1.5 text-clay-400">
-            <li><a href="#o-firme" class="hover:text-amber-400">O firmě & Historie</a></li>
-            <li><a href="#obchod" class="hover:text-amber-400">Obchodní podmínky</a></li>
-            <li><a href="#cenik" class="hover:text-amber-400">Ceník na vyžádání</a></li>
-            <li><a href="#dokumenty" class="hover:text-amber-400">Živnostenský list & Osvědčení</a></li>
-            <li><a href="#dokumenty" class="hover:text-amber-400">Prohlášení o shodě</a></li>
+            <li><a href="#o-firme" class="hover:text-amber-400">Informace o firmě</a></li>
+            <li><a href="#obchod" class="hover:text-amber-400">Obchodní informace</a></li>
+            <li><a href="#cenik" class="hover:text-amber-400">Ceník</a></li>
+            <li><a href="#dokumenty" class="hover:text-amber-400">Dokumenty ke stažení</a></li>
+            <li><a href="#kontakty" class="hover:text-amber-400">Kontakty</a></li>
           </ul>
         </div>
 
@@ -790,29 +826,22 @@
     </div>
   </footer>
 
-  <!-- SCRIPT PRO LOGIKU KATALOGU, FILTRŮ A MODALU -->
+  <!-- APLIKAČNÍ LOGIKA KATALOGU A MENU -->
   <script>
     let fullCatalog = [];
     let currentCategory = 'all';
-    let currentGroup = 'all';
 
-    const groupMapping = {
-      'sudy': ['sud_na_zeli', 'poklice_na_zelaky', 'ml_hrnec_bez_poklice', 'ml_hrnec_s_poklici', 'sadlaky', 'kvetinace_z_hrncu'],
-      'kvetinace': ['zardenka_strukturovana', 'zardenka_glazovana', 'zardenka_glaz_cok', 'kvetinac_strukturovany', 'kvetinac_strukturovany_uch', 'kvetinac_ryty_cerveny', 'kvetinac_ryty_hnedy', 'kvetinace_glazovane'],
-      'peceni': ['misky_rovne', 'misky_cokovane', 'kastroly_a_misy', 'formy_na_peceni', 'dozy_na_potraviny', 'hrnky'],
-      'zahrada': ['krmitka', 'drobnosti', 'vazy_a_amfory', 'jahodniky_a_petrzelaky', 'kosiky_s_uchem']
-    };
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
 
     async function initCatalog() {
       try {
         const response = await fetch('catalog_clean.json');
         fullCatalog = await response.json();
 
-        // Celkový počet položek
-        let total = 0;
-        fullCatalog.forEach(c => total += c.items.length);
-        document.getElementById('total-badge').textContent = total;
-
+        buildMegaMenu();
         buildCategoryPills();
         renderCatalog();
       } catch (e) {
@@ -820,60 +849,48 @@
       }
     }
 
+    function buildMegaMenu() {
+      const list = document.getElementById('mega-menu-list');
+      list.innerHTML = '';
+
+      fullCatalog.forEach(cat => {
+        const a = document.createElement('a');
+        a.href = '#katalog';
+        a.className = 'py-1 px-2 rounded-md hover:bg-clay-100 text-stone-700 hover:text-clay-800 transition-colors flex items-center justify-between';
+        a.innerHTML = `<span>${cat.category}</span><span class="text-[10px] text-stone-400 font-semibold">${cat.items.length}</span>`;
+        a.onclick = () => filterCategory(cat.slug);
+        list.appendChild(a);
+      });
+    }
+
     function buildCategoryPills() {
       const container = document.getElementById('category-pills');
       container.innerHTML = '';
 
-      // Tlačítko Vše
       const allBtn = document.createElement('button');
-      allBtn.className = 'category-pill active px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide border border-clay-300 bg-white text-stone-700 hover:bg-clay-100 transition-all';
+      allBtn.className = 'cat-btn active px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide border border-clay-300 bg-white text-stone-700 hover:bg-clay-100 transition-all';
       allBtn.setAttribute('data-category', 'all');
-      allBtn.textContent = `Všechny kategorie`;
-      allBtn.onclick = () => selectCategory('all');
+      allBtn.textContent = `Všechny kategorie (152)`;
+      allBtn.onclick = () => filterCategory('all');
       container.appendChild(allBtn);
 
       fullCatalog.forEach(cat => {
         const btn = document.createElement('button');
-        btn.className = 'category-pill px-2.5 py-1 rounded-lg text-xs font-medium border border-clay-300 bg-white text-stone-700 hover:bg-clay-100 transition-all';
+        btn.className = 'cat-btn px-2.5 py-1 rounded-lg text-xs font-medium border border-clay-300 bg-white text-stone-700 hover:bg-clay-100 transition-all';
         btn.setAttribute('data-category', cat.slug);
         btn.textContent = `${cat.category} (${cat.items.length})`;
-        btn.onclick = () => selectCategory(cat.slug);
+        btn.onclick = () => filterCategory(cat.slug);
         container.appendChild(btn);
       });
     }
 
-    function filterGroup(group) {
-      currentGroup = group;
-      currentCategory = 'all';
-
-      document.querySelectorAll('.group-tab').forEach(t => {
-        t.classList.remove('active');
-      });
-      event.target.classList.add('active');
-
-      // Update visible category pills based on group
-      document.querySelectorAll('.category-pill').forEach(pill => {
-        const catSlug = pill.getAttribute('data-category');
-        if (catSlug === 'all') {
-          pill.style.display = 'inline-block';
-        } else if (group === 'all') {
-          pill.style.display = 'inline-block';
-        } else {
-          const allowed = groupMapping[group] || [];
-          pill.style.display = allowed.includes(catSlug) ? 'inline-block' : 'none';
-        }
-      });
-
-      selectCategory('all');
-    }
-
-    function selectCategory(slug) {
+    function filterCategory(slug) {
       currentCategory = slug;
-      document.querySelectorAll('.category-pill').forEach(pill => {
-        if (pill.getAttribute('data-category') === slug) {
-          pill.classList.add('active');
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.getAttribute('data-category') === slug) {
+          btn.classList.add('active');
         } else {
-          pill.classList.remove('active');
+          btn.classList.remove('active');
         }
       });
       renderCatalog();
@@ -896,13 +913,6 @@
       let filtered = [];
 
       fullCatalog.forEach(cat => {
-        // Group check
-        if (currentGroup !== 'all') {
-          const allowedSlugs = groupMapping[currentGroup] || [];
-          if (!allowedSlugs.includes(cat.slug)) return;
-        }
-
-        // Category check
         if (currentCategory !== 'all' && cat.slug !== currentCategory) {
           return;
         }
@@ -937,9 +947,11 @@
         card.className = 'bg-white rounded-2xl overflow-hidden border border-clay-200 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col cursor-pointer group';
         card.onclick = () => openModal(item);
 
+        const imgSrc = item.clean_image || item.image;
+
         card.innerHTML = `
           <div class="aspect-[4/3] bg-clay-50/70 p-3 flex items-center justify-center relative overflow-hidden">
-            <img src="${item.image}" alt="${item.title}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='images/site/dub.gif'">
+            <img src="${imgSrc}" alt="${item.title}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='images/site/dub.gif'">
             <span class="absolute top-2 left-2 text-[10px] font-bold uppercase tracking-wider text-clay-800 bg-white/90 backdrop-blur px-2 py-0.5 rounded border border-clay-200">
               ${item.categoryName}
             </span>
@@ -959,28 +971,16 @@
       });
     }
 
-    document.getElementById('catalog-search').addEventListener('input', () => {
-      renderCatalog();
-    });
+    document.getElementById('catalog-search').addEventListener('input', renderCatalog);
 
     function clearSearch() {
       document.getElementById('catalog-search').value = '';
       renderCatalog();
     }
 
-    function resetFilters() {
-      document.getElementById('catalog-search').value = '';
-      currentGroup = 'all';
-      currentCategory = 'all';
-      document.querySelectorAll('.group-tab').forEach(t => t.classList.remove('active'));
-      document.querySelector('.group-tab').classList.add('active');
-      buildCategoryPills();
-      renderCatalog();
-    }
-
     // Modal
     function openModal(item) {
-      document.getElementById('modal-img').src = item.image;
+      document.getElementById('modal-img').src = item.clean_image || item.image;
       document.getElementById('modal-category').textContent = item.categoryName;
       document.getElementById('modal-title').textContent = item.title;
       document.getElementById('modal-details').textContent = item.details || 'Rozměry a objemy dle původní specifikace KERAMIKY DUB.';
@@ -1007,7 +1007,7 @@
       setTimeout(() => msg.classList.add('hidden'), 5000);
     }
 
-    // Spustit
+    // Inicializace
     initCatalog();
   </script>
 
