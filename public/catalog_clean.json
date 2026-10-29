@@ -4,37 +4,37 @@
     "slug": "sud_na_zeli",
     "items": [
       {
-        "title": "Sudy na zelí",
-        "details": "Sud na zelí Sud na zelí 4 litry 6 litrů 10 litrů 15 litrů 20 litrů 35 litrů 15 litrů 20 litrů 35 litrů 20 litrů",
+        "title": "Sud na zelí",
+        "details": "4 litry 6 litrů 10 litrů",
         "image": "images/katalog/sud_na_zeli1.jpg"
       },
       {
         "title": "Sud na zelí",
-        "details": "",
+        "details": "15 litrů 20 litrů 35 litrů",
         "image": "images/katalog/sud_na_zeli2.jpg"
       },
       {
-        "title": "Sud na zelí",
-        "details": "",
+        "title": "Sud na zeli3",
+        "details": "15 litrů",
         "image": "images/katalog/sud_na_zeli3.jpg"
       },
       {
-        "title": "Sud na zelí",
-        "details": "",
+        "title": "Sud na zeli4",
+        "details": "20 litrů",
         "image": "images/katalog/sud_na_zeli4.jpg"
       },
       {
-        "title": "Sud na zelí",
-        "details": "",
+        "title": "Sud na zeli5",
+        "details": "35 litrů",
         "image": "images/katalog/sud_na_zeli5.jpg"
       },
       {
-        "title": "Sud na zelí",
-        "details": "",
+        "title": "Sud na zeli6",
+        "details": "20 litrů",
         "image": "images/katalog/sud_na_zeli6.jpg"
       },
       {
-        "title": "Sud na zelí",
+        "title": "Zelak 3l",
         "details": "",
         "image": "images/katalog/zelak_3l.jpg"
       }
@@ -45,8 +45,8 @@
     "slug": "poklice_na_zelaky",
     "items": [
       {
-        "title": "Poklice na zeláky",
-        "details": "15 litrů 20 litrů 35 litrů",
+        "title": "Poklice na zelakove hrnce",
+        "details": "15 litrů",
         "image": "images/katalog/poklice_na_zelakove_hrnce.jpg"
       }
     ]
@@ -56,47 +56,47 @@
     "slug": "krmitka",
     "items": [
       {
-        "title": "Krmítka",
-        "details": "Krmítko jednoduché Krmítko dvojité 0,5 litru 1 litr Krmítko pro ptáky Psí miska Miska pro holuby struk. Miska pro holuby glaz. Misky pro křečka Misky pro psy Ptačí budka střední",
+        "title": "Krmítko jednoduché",
+        "details": "0,5 litru",
         "image": "images/katalog/krmitko_jednoduche1.jpg"
       },
       {
-        "title": "Krmítka",
-        "details": "",
+        "title": "Krmítko dvojité",
+        "details": "1 litr",
         "image": "images/katalog/krmitko_dvojite1.jpg"
       },
       {
-        "title": "Krmítka",
+        "title": "Krmítko pro ptáky",
         "details": "",
         "image": "images/katalog/krmitko_pro_ptaky1.jpg"
       },
       {
-        "title": "Krmítka",
+        "title": "Psí miska",
         "details": "",
         "image": "images/katalog/krmitko_psi1.jpg"
       },
       {
-        "title": "Krmítka",
+        "title": "Miska pro holuby struk.",
         "details": "",
         "image": "images/katalog/miska_pro_holuby1.jpg"
       },
       {
-        "title": "Krmítka",
+        "title": "Miska pro holuby glaz.",
         "details": "",
         "image": "images/katalog/miska_pro_holuby2.jpg"
       },
       {
-        "title": "Krmítka",
+        "title": "Misky pro křečka",
         "details": "",
         "image": "images/katalog/miska_pro_krecka.jpg"
       },
       {
-        "title": "Krmítka",
+        "title": "Misky pro psy",
         "details": "",
         "image": "images/katalog/misky_pro_psy.jpg"
       },
       {
-        "title": "Krmítka",
+        "title": "Ptačí budka střední",
         "details": "",
         "image": "images/katalog/ptaci_budka_stredni.jpg"
       }
@@ -108,7 +108,7 @@
     "items": [
       {
         "title": "Mléčný hrnec bez poklice",
-        "details": "Mléčný hrnec bez poklice 0,5 litru 1 litr 2 litry 3 litry 4 litry 6 litrů",
+        "details": "0,5 litru 1 litr 2 litry",
         "image": "images/katalog/ml_hrnec_bez_poklice1.jpg"
       }
     ]
@@ -119,17 +119,17 @@
     "items": [
       {
         "title": "Mléčný hrnec rovný s poklicí",
-        "details": "Mléčný hrnec rovný s poklicí Mléčný hrnec rovný s poklicí 0,5 litru 1 litr 3 litry Mléčný hrnec rovný s poklicí 4 litry 6 litrů",
+        "details": "0,5 litru 1 litr",
         "image": "images/katalog/ml_hrnec_rovny_s_poklickou1.jpg"
       },
       {
-        "title": "Ml. hrnec s poklicí",
-        "details": "",
+        "title": "Mléčný hrnec rovný s poklicí",
+        "details": "3 litry",
         "image": "images/katalog/ml_hrnec_rovny_s_poklickou2.jpg"
       },
       {
-        "title": "Ml. hrnec s poklicí",
-        "details": "",
+        "title": "Mléčný hrnec rovný s poklicí",
+        "details": "4 litry 6 litrů",
         "image": "images/katalog/ml_hrnec_rovny_s_poklickou3.jpg"
       }
     ]
@@ -139,23 +139,23 @@
     "slug": "sadlaky",
     "items": [
       {
-        "title": "Sádláky",
-        "details": "Sádlák s pokličkou Sádlák s pokličkou 0,5 litru 1 litr 3,5 litru 2 litry 3,5 litru Sádlák s pokličkou Sádlák s pokličkou 3,5 litru 6 litrů 2 litry 3,5 litru s ornamentem",
+        "title": "Sádlák s pokličkou",
+        "details": "0,5 litru 1 litr 3,5 litru",
         "image": "images/katalog/sadlak_s_poklickou1.jpg"
       },
       {
-        "title": "Sádláky",
-        "details": "",
+        "title": "Sádlák s pokličkou",
+        "details": "2 litry 3,5 litru",
         "image": "images/katalog/sadlak_s_poklickou2.jpg"
       },
       {
-        "title": "Sádláky",
-        "details": "",
+        "title": "Sádlák s pokličkou",
+        "details": "3,5 litru 6 litrů",
         "image": "images/katalog/sadlak_s_poklickou3.jpg"
       },
       {
-        "title": "Sádláky",
-        "details": "",
+        "title": "Sádlák s pokličkou",
+        "details": "2 litry 3,5 litru s ornamentem",
         "image": "images/katalog/sadlak_s_poklickou4.jpg"
       }
     ]
@@ -166,31 +166,31 @@
     "items": [
       {
         "title": "Žardenka strukturovaná",
-        "details": "Žardenka strukturovaná Žardenka strukturovaná 10 cm 14 cm 16 cm 18 cm 20 cm 22 cm 24 cm 27 cm 30 cm 40 cm Žardenka strukturovaná Žardenka strukturovaná 20 cm 40 cm Dvoj. žardena Žardenka antik s kroužky 54 cm",
+        "details": "10 cm 14 cm 16 cm 18 cm 20 cm 22 cm",
         "image": "images/katalog/zardenka_strukturovana1.jpg"
       },
       {
         "title": "Žardenka strukturovaná",
-        "details": "",
+        "details": "24 cm 27 cm 30 cm 40 cm",
         "image": "images/katalog/zardenka_strukturovana2.jpg"
       },
       {
         "title": "Žardenka strukturovaná",
-        "details": "",
+        "details": "20 cm",
         "image": "images/katalog/zardenka_strukturovana3.jpg"
       },
       {
         "title": "Žardenka strukturovaná",
-        "details": "",
+        "details": "40 cm",
         "image": "images/katalog/zardenka_strukturovana4.jpg"
       },
       {
-        "title": "Žardenka strukturovaná",
-        "details": "",
+        "title": "Dvoj. žardena",
+        "details": "54 cm",
         "image": "images/katalog/zardenka_strukturovana5.jpg"
       },
       {
-        "title": "Žardenka strukturovaná",
+        "title": "Žardenka antik s kroužky",
         "details": "",
         "image": "images/katalog/zardenka_antik_s_krouzky.jpg"
       }
@@ -202,32 +202,32 @@
     "items": [
       {
         "title": "Žardenka glazovaná",
-        "details": "Žardenka glazovaná Žardenka glazovaná 30 cm 40 cm 10 cm 14 cm 16 cm 18 cm 20 cm 22 cm Žardenka glazovaná Žardenka glazovaná 10 cm 14 cm Žardenka glazovaná Žardenka glazovaná 16 cm 28 cm Žardenka glazovaná",
+        "details": "30 cm 40 cm",
         "image": "images/katalog/zardenka_glazovana1.jpg"
       },
       {
         "title": "Žardenka glazovaná",
-        "details": "",
+        "details": "10 cm 14 cm 16 cm 18 cm 20 cm 22 cm",
         "image": "images/katalog/zardenka_glazovana2.jpg"
       },
       {
         "title": "Žardenka glazovaná",
-        "details": "",
+        "details": "10 cm",
         "image": "images/katalog/zardenka_glazovana3.jpg"
       },
       {
         "title": "Žardenka glazovaná",
-        "details": "",
+        "details": "14 cm",
         "image": "images/katalog/zardenka_glazovana4.jpg"
       },
       {
         "title": "Žardenka glazovaná",
-        "details": "",
+        "details": "16 cm",
         "image": "images/katalog/zardenka_glazovana5.jpg"
       },
       {
         "title": "Žardenka glazovaná",
-        "details": "",
+        "details": "28 cm",
         "image": "images/katalog/zardenka_glazovana6.jpg"
       },
       {
@@ -238,22 +238,68 @@
     ]
   },
   {
+    "category": "Žardenka glazovaná cok.",
+    "slug": "zardenka_glaz_cok",
+    "items": [
+      {
+        "title": "ardenka glazovaná cokovaná",
+        "details": "10 cm",
+        "image": "images/katalog/zardenka_glaz_cok1.jpg"
+      },
+      {
+        "title": "ardenka glazovaná cokovaná",
+        "details": "14 cm 16 cm",
+        "image": "images/katalog/zardenka_glaz_cok2.jpg"
+      },
+      {
+        "title": "ardenka glazovaná cokovaná",
+        "details": "18 cm 20 cm",
+        "image": "images/katalog/zardenka_glaz_cok3.jpg"
+      },
+      {
+        "title": "ardenka glazovaná cokovaná",
+        "details": "22 cm 24 cm",
+        "image": "images/katalog/zardenka_glaz_cok4.jpg"
+      },
+      {
+        "title": "ardenka glazovaná cokovaná",
+        "details": "27 cm 30 cm 32 cm",
+        "image": "images/katalog/zardenka_glaz_cok5.jpg"
+      },
+      {
+        "title": "ardenka glazovaný kraj cokovaná",
+        "details": "30 cm 40 cm",
+        "image": "images/katalog/zardenka_glaz_okraj_cok6.jpg"
+      },
+      {
+        "title": "ardenka glazovaná cokovaná",
+        "details": "27 cm",
+        "image": "images/katalog/zardenka_glaz_cok6.jpg"
+      },
+      {
+        "title": "ardenka glazovaná cokovaná",
+        "details": "32 cm",
+        "image": "images/katalog/zardenka_glaz_cok7.jpg"
+      }
+    ]
+  },
+  {
     "category": "Květináč strukturovaný",
     "slug": "kvetinac_strukturovany",
     "items": [
       {
         "title": "Květináč strukturovaný",
-        "details": "Květináč strukturovaný Květináč strukturovaný tvar sádlák 0,5 litru až 6 litrů 14 cm Květináč strukturovaný 16 cm",
+        "details": "tvar sádlák 0,5 litru až 6 litrů",
         "image": "images/katalog/kvetinac_sadlak_strukturovany_6l.jpg"
       },
       {
         "title": "Květináč strukturovaný",
-        "details": "",
+        "details": "14 cm",
         "image": "images/katalog/kvetinac_strukturovany_14cm.jpg"
       },
       {
         "title": "Květináč strukturovaný",
-        "details": "",
+        "details": "16 cm",
         "image": "images/katalog/kvetinac_strukturovany_16cm.jpg"
       }
     ]
@@ -264,22 +310,22 @@
     "items": [
       {
         "title": "Květináč strukturovaný uchatý",
-        "details": "Květináč strukturovaný uchatý Květináč s kroužky 18 cm 24 cm 26 cm 30 cm 32 cm 0,5 litru až 6 litrů Květináč z pece na dřevo Květináč - kostkovaný vzorek 30 cm",
+        "details": "18 cm 24 cm 26 cm 30 cm 32 cm",
         "image": "images/katalog/kvetinac_strukturovany_uhaty1.jpg"
       },
       {
-        "title": "Květináč strukturovaný uch.",
-        "details": "",
+        "title": "Květináč s kroužky",
+        "details": "0,5 litru až 6 litrů",
         "image": "images/katalog/kvetinac_krouzek_2l.jpg"
       },
       {
-        "title": "Květináč strukturovaný uch.",
+        "title": "Květináč z pece na dřevo",
         "details": "",
-        "image": "images/katalog/kvetinac_s_krouzky_z_%20pece_na_drevo.jpg"
+        "image": "images/katalog/kvetinac_s_krouzky_z_ pece_na_drevo.jpg"
       },
       {
-        "title": "Květináč strukturovaný uch.",
-        "details": "",
+        "title": "Květináč - kostkovaný vzorek",
+        "details": "30 cm",
         "image": "images/katalog/kvetinac_struk_30cm_kostka.jpg"
       }
     ]
@@ -290,8 +336,44 @@
     "items": [
       {
         "title": "Květináč rytý červený",
-        "details": "Květináč rytý červený 9 cm 14 cm 16 cm 18 cm 20 cm 22 cm",
+        "details": "9 cm 14 cm 16 cm",
         "image": "images/katalog/kvetinac_ryty_cerveny1.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Květináč rytý hnědý",
+    "slug": "kvetinac_ryty_hnedy",
+    "items": [
+      {
+        "title": "Květináč rytý hnědý",
+        "details": "9 cm 14 cm 16 cm 18 cm 20 cm 22 cm",
+        "image": "images/katalog/kvetinac_ryty_hnedy1.jpg"
+      },
+      {
+        "title": "Květináč rytý hnědý uchatý",
+        "details": "18 cm 24 cm 26 cm 30 cm 32 cm",
+        "image": "images/katalog/kvetinac_ryty_hnedy_uchaty1.jpg"
+      },
+      {
+        "title": "Květináč rytý hnědý",
+        "details": "14 cm",
+        "image": "images/katalog/kvetinac_ryty_hnedy2.jpg"
+      },
+      {
+        "title": "Květináč rytý hnědý uchatý",
+        "details": "24 cm",
+        "image": "images/katalog/kvetinac_ryty_hnedy_uchaty2.jpg"
+      },
+      {
+        "title": "Květináč rytý hnědý uchatý",
+        "details": "14 cm",
+        "image": "images/katalog/kvetinac_ryty_hnedy_uchaty3.jpg"
+      },
+      {
+        "title": "Květináč rytý hnědý uchatý",
+        "details": "24 cm",
+        "image": "images/katalog/kvetinac_ryty_hnedy_uchaty4.jpg"
       }
     ]
   },
@@ -300,43 +382,43 @@
     "slug": "kvetinace_glazovane",
     "items": [
       {
-        "title": "Květináče glazované",
-        "details": "Květináč glazovaný cokovaný uchatý Květináč ozdobný 18 cm 24 cm 28 cm 32 cm 15 litrů 20 litrů 35 litrů Kaktusák glazovaný Květináč ozdobný 10 cm 35 litrů Květináč glazovaný cokovaný uchatý Květináč glazovaný cokovaný uchatý 24 cm 32 cm 32 cm 35 cm Květináč glazovaný rovný Květináč glazovaný ornament 26 cm",
+        "title": "Květináč glazovaný cokovaný uchatý",
+        "details": "18 cm 24 cm 28 cm 32 cm",
         "image": "images/katalog/kvetinac_glazovany_cokovany_uchaty1.jpg"
       },
       {
-        "title": "Květináče glazované",
-        "details": "",
+        "title": "Květináč ozdobný",
+        "details": "15 litrů 20 litrů 35 litrů",
         "image": "images/katalog/kvetinac_ozdobny1.jpg"
       },
       {
-        "title": "Květináče glazované",
-        "details": "",
+        "title": "Kaktusák glazovaný",
+        "details": "10 cm",
         "image": "images/katalog/kaktusak_glazovany1.jpg"
       },
       {
-        "title": "Květináče glazované",
-        "details": "",
+        "title": "Květináč ozdobný",
+        "details": "35 litrů",
         "image": "images/katalog/kvetinac_ozdobny2.jpg"
       },
       {
-        "title": "Květináče glazované",
-        "details": "",
+        "title": "Květináč glazovaný cokovaný uchatý",
+        "details": "24 cm 32 cm",
         "image": "images/katalog/kvetinac_glazovany_cokovany1.jpg"
       },
       {
-        "title": "Květináče glazované",
-        "details": "",
+        "title": "Květináč glazovaný cokovaný uchatý",
+        "details": "32 cm 35 cm",
         "image": "images/katalog/kvetinac_glazovany_cokovany2.jpg"
       },
       {
-        "title": "Květináče glazované",
+        "title": "Květináč glazovaný rovný",
         "details": "",
         "image": "images/katalog/kvetinac_glazovany_rovny1.jpg"
       },
       {
-        "title": "Květináče glazované",
-        "details": "",
+        "title": "Květináč glazovaný ornament",
+        "details": "26 cm",
         "image": "images/katalog/kvetinac_glazovany_ornament1.jpg"
       }
     ]
@@ -346,29 +428,55 @@
     "slug": "misky_rovne",
     "items": [
       {
-        "title": "Misky rovné",
-        "details": "Miska rovná Miska rovná 10 cm až 40 cm 12 cm až 40 cm Miska rovná Miska rovná 15 cm až 40 cm 18 cm až 40 cm Miska rovná 24 cm až 40 cm",
+        "title": "Miska rovná",
+        "details": "10 cm až 40 cm",
         "image": "images/katalog/miska_rovna1.jpg"
       },
       {
-        "title": "Misky rovné",
-        "details": "",
+        "title": "Miska rovná",
+        "details": "12 cm až 40 cm",
         "image": "images/katalog/miska_rovna2.jpg"
       },
       {
-        "title": "Misky rovné",
-        "details": "",
+        "title": "Miska rovná",
+        "details": "15 cm až 40 cm",
         "image": "images/katalog/miska_rovna3.jpg"
       },
       {
-        "title": "Misky rovné",
-        "details": "",
+        "title": "Miska rovná",
+        "details": "18 cm až 40 cm",
         "image": "images/katalog/miska_rovna4.jpg"
       },
       {
-        "title": "Misky rovné",
-        "details": "",
+        "title": "Miska rovná",
+        "details": "24 cm až 40 cm",
         "image": "images/katalog/miska_rovna5.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Misky cokované",
+    "slug": "misky_cokovane",
+    "items": [
+      {
+        "title": "Miska glazovaná cokovaná",
+        "details": "10 cm 12 cm 14 cm 16 cm 18 cm 20 cm až 40 cm",
+        "image": "images/katalog/miska_glazovana_cokovana1.jpg"
+      },
+      {
+        "title": "Miska glazovaná cokovaná",
+        "details": "18 cm až 40 cm",
+        "image": "images/katalog/miska_glazovana_cokovana2.jpg"
+      },
+      {
+        "title": "Miska glazovaná cokovaná",
+        "details": "20 cm až 40 cm",
+        "image": "images/katalog/miska_glazovana_cokovana3.jpg"
+      },
+      {
+        "title": "Miska glazovaná cokovaná",
+        "details": "32 cm až 40 cm",
+        "image": "images/katalog/miska_glazovana_cokovana4.jpg"
       }
     ]
   },
@@ -377,34 +485,80 @@
     "slug": "kastroly_a_misy",
     "items": [
       {
-        "title": "Kastroly a mísy",
-        "details": "Zadělávačka Kastrol č.3 č.4 č.5 1,5 litru 2 litry Bujónka bez poklice Bujónka s poklicí Bujónka s poklicí - text Velká salátová mísa",
+        "title": "Zadělávačka",
+        "details": "č.3 č.4 č.5",
         "image": "images/katalog/zadelavacka1.jpg"
       },
       {
-        "title": "Kastroly a mísy",
-        "details": "",
+        "title": "Kastrol",
+        "details": "1,5 litru 2 litry",
         "image": "images/katalog/kastrol1.jpg"
       },
       {
-        "title": "Kastroly a mísy",
+        "title": "Bujónka bez poklice",
         "details": "",
         "image": "images/katalog/bujonka_bez_poklice.jpg"
       },
       {
-        "title": "Kastroly a mísy",
+        "title": "Bujónka s poklicí",
         "details": "",
         "image": "images/katalog/bujonka_s_poklici.jpg"
       },
       {
-        "title": "Kastroly a mísy",
+        "title": "Bujónka s poklicí - text",
         "details": "",
         "image": "images/katalog/bujonka_s_poklici_text.jpg"
       },
       {
-        "title": "Kastroly a mísy",
+        "title": "Velká salátová mísa",
         "details": "",
         "image": "images/katalog/salatova_miska_velka.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Formy na pečení",
+    "slug": "formy_na_peceni",
+    "items": [
+      {
+        "title": "Forma na pečení zajíc",
+        "details": "",
+        "image": "images/katalog/forma_na_peceni_zajic1.jpg"
+      },
+      {
+        "title": "Pekáč na kuře",
+        "details": "",
+        "image": "images/katalog/forma_na_peceni_pekac_na_kure1.jpg"
+      },
+      {
+        "title": "Forma na pečení bábovka",
+        "details": "",
+        "image": "images/katalog/forma_na_peceni_babovka1.jpg"
+      },
+      {
+        "title": "Forma na pečení beránek",
+        "details": "",
+        "image": "images/katalog/forma_na_peceni_beranek1.jpg"
+      },
+      {
+        "title": "Forma na pečení vánočka",
+        "details": "",
+        "image": "images/katalog/forma_na_peceni_vanocka1.jpg"
+      },
+      {
+        "title": "Biskupský chlebíček",
+        "details": "",
+        "image": "images/katalog/forma_biskupsky_chlebicek.jpg"
+      },
+      {
+        "title": "Srdce malé",
+        "details": "",
+        "image": "images/katalog/forma_srdce_male.jpg"
+      },
+      {
+        "title": "Srdce velké",
+        "details": "",
+        "image": "images/katalog/forma_srdce_velke.jpg"
       }
     ]
   },
@@ -413,73 +567,73 @@
     "slug": "dozy_na_potraviny",
     "items": [
       {
-        "title": "Dozy na potraviny",
-        "details": "Cibule - Česnek Velký džbán 1 litr 2 litry Džbán na víno Hrnec na brambory 4 litry 6 litrů Hrnec s nápisem Hrnec s nápisem tvar - sádlák 0,5 litru až 6 litrů tvar - sádlák 0,5 litru až 6 litrů Cibule - Česnek Hrnce s nápisem glazované 0,5 litru až 6 litrů Hrnce s nápisem Hrnce s nápisem tvar - mléčný hrnec 0,5 litru až 6 litrů tvar - mléčný hrnec 0,5 litru až 6 litrů Džbány Cukřenka Konvice na čaj - barevná Konvice na čaj - hnědá 1,5 litru 1,5 litru",
+        "title": "Cibule - Česnek",
+        "details": "1 litr 2 litry",
         "image": "images/katalog/cibule_cesnek1.jpg"
       },
       {
-        "title": "Dozy na potraviny",
+        "title": "Velký džbán",
         "details": "",
         "image": "images/katalog/dozy_velky_dzban1.jpg"
       },
       {
-        "title": "Dozy na potraviny",
+        "title": "Džbán na víno",
         "details": "",
         "image": "images/katalog/dozy_dzban_na_vino1.jpg"
       },
       {
-        "title": "Dozy na potraviny",
-        "details": "",
+        "title": "Hrnec na brambory",
+        "details": "4 litry 6 litrů",
         "image": "images/katalog/doza_na_brambory.jpg"
       },
       {
-        "title": "Dozy na potraviny",
-        "details": "",
+        "title": "Hrnec s nápisem",
+        "details": "tvar - sádlák 0,5 litru až 6 litrů",
         "image": "images/katalog/doza_na_potraviny_s_napisem_tip_sadlak.jpg"
       },
       {
-        "title": "Dozy na potraviny",
-        "details": "",
+        "title": "Hrnec s nápisem",
+        "details": "tvar - sádlák 0,5 litru až 6 litrů",
         "image": "images/katalog/doza_na_potraviny_s_napisem_tip_sadlak_1l.jpg"
       },
       {
-        "title": "Dozy na potraviny",
-        "details": "",
+        "title": "Cibule - Česnek",
+        "details": "glazované",
         "image": "images/katalog/dozy_na_cibuli_nebo_cesnek_glaz.jpg"
       },
       {
-        "title": "Dozy na potraviny",
-        "details": "",
+        "title": "Hrnce s nápisem",
+        "details": "0,5 litru až 6 litrů",
         "image": "images/katalog/dozy_na_potraviny_typ_sadlak.jpg"
       },
       {
-        "title": "Dozy na potraviny",
-        "details": "",
+        "title": "Hrnce s nápisem",
+        "details": "tvar - mléčný hrnec 0,5 litru až 6 litrů",
         "image": "images/katalog/dozy_na_potraviny_3l_ml.jpg"
       },
       {
-        "title": "Dozy na potraviny",
-        "details": "",
+        "title": "Hrnce s nápisem",
+        "details": "tvar - mléčný hrnec 0,5 litru až 6 litrů",
         "image": "images/katalog/dozy_na_potraviny_s_napisem_typ_ml.jpg"
       },
       {
-        "title": "Dozy na potraviny",
+        "title": "Džbány",
         "details": "",
         "image": "images/katalog/dzbany.jpg"
       },
       {
-        "title": "Dozy na potraviny",
+        "title": "Cukřenka",
         "details": "",
         "image": "images/katalog/cukrenka.jpg"
       },
       {
-        "title": "Dozy na potraviny",
-        "details": "",
+        "title": "Konvice na čaj - barevná",
+        "details": "1,5 litru",
         "image": "images/katalog/konvice_na_caj_barevna_1,5litru.jpg"
       },
       {
-        "title": "Dozy na potraviny",
-        "details": "",
+        "title": "Konvice na čaj - hnědá",
+        "details": "1,5 litru",
         "image": "images/katalog/konvice_na_caj_hneda_1,5litru.jpg"
       }
     ]
@@ -489,62 +643,62 @@
     "slug": "hrnky",
     "items": [
       {
-        "title": "Hrnky a hrníčky",
-        "details": "Hrnek na tyčinky Hrnek rovný - hnědý 0,5 litru Hrnek buclák - dvoubarevný Hrnek buclák - hnědý 0,5 litru 0,5 litru Hrnek kónický - dvoubarevný Hrnek kónický - dvoubarevný 0,5 litru 0,5 litru škrábaný Hrnek hnědý,mléčný - text Hrnek rovný - dvoubarevný 0,5 litru 0,5 litru Hrníček ručně točený dvojbarevný Hrníček r. t. Hrníček škr. Hrnky s nápisem",
+        "title": "Hrnek na tyčinky",
+        "details": "",
         "image": "images/katalog/doza_na_tycinky_1l.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
-        "details": "",
+        "title": "Hrnek rovný - hnědý",
+        "details": "0,5 litru",
         "image": "images/katalog/hrnek_rovny_hnedy_pullitr.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
-        "details": "",
+        "title": "Hrnek buclák - dvoubarevný",
+        "details": "0,5 litru",
         "image": "images/katalog/hrnek_buclak_dvoubarevny_pullitr.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
-        "details": "",
+        "title": "Hrnek buclák - hnědý",
+        "details": "0,5 litru",
         "image": "images/katalog/hrnek_buclak_hnedy_pullitr.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
-        "details": "",
+        "title": "Hrnek kónický - dvoubarevný",
+        "details": "0,5 litru",
         "image": "images/katalog/hrnek_konicky_dvoubarevny.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
-        "details": "",
+        "title": "Hrnek kónický - dvoubarevný",
+        "details": "0,5 litru škrábaný",
         "image": "images/katalog/hrnek_konicky_dvoubarevny_skrabany.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
-        "details": "",
+        "title": "Hrnek hnědý,mléčný - text",
+        "details": "0,5 litru",
         "image": "images/katalog/hrnek_mlecny_hnedy_pullitr_text.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
-        "details": "",
+        "title": "Hrnek rovný - dvoubarevný",
+        "details": "0,5 litru",
         "image": "images/katalog/hrnek_rovny_dvoubarevny_pullitr.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
+        "title": "Hrníček ručně točený dvojbarevný",
         "details": "",
         "image": "images/katalog/drobnosti_hrnicek_ruc_toc_dvojb1.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
+        "title": "Hrníček r. t.",
         "details": "",
         "image": "images/katalog/drobnosti_hrnicek_r_t1.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
+        "title": "Hrníček škr.",
         "details": "",
         "image": "images/katalog/drobnosti_hrnicek_skr1.jpg"
       },
       {
-        "title": "Hrnky a hrníčky",
+        "title": "Hrnky s nápisem",
         "details": "",
         "image": "images/katalog/drobnosti_hrnek_napis1.jpg"
       }
@@ -555,62 +709,62 @@
     "slug": "drobnosti",
     "items": [
       {
-        "title": "Doplňkový sortiment",
-        "details": "Popelník Stojan na deštníky Vajíčko na ubrousky Zvon Pokladnička domeček Slánka dvojitá Stromeček Odpařovač Dýně Pivní půllitr (krígl) Mísy na ovoce Adventní věnec",
+        "title": "Popelník",
+        "details": "",
         "image": "images/katalog/drobnosti_popelnik1.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Stojan na deštníky",
         "details": "",
         "image": "images/katalog/drobnosti_stojan_na_destniky1.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Vajíčko na ubrousky",
         "details": "",
         "image": "images/katalog/drobnosti_vajicko_ubrousek1.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Zvon",
         "details": "",
         "image": "images/katalog/drobnosti_zvon1.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Pokladnička domeček",
         "details": "",
         "image": "images/katalog/pokladnicka_domecek.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Slánka dvojitá",
         "details": "",
         "image": "images/katalog/drobnosti_slanka1.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Stromeček",
         "details": "",
         "image": "images/katalog/drobnosti_stromecek1.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Odpařovač",
         "details": "",
         "image": "images/katalog/drobnosti_odparovac1.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Dýně",
         "details": "",
         "image": "images/katalog/dyne.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Pivní půllitr (krígl)",
         "details": "",
         "image": "images/katalog/krigle.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Mísy na ovoce",
         "details": "",
         "image": "images/katalog/misy_na_ovoce.jpg"
       },
       {
-        "title": "Doplňkový sortiment",
+        "title": "Adventní věnec",
         "details": "",
         "image": "images/katalog/adventni_venec.jpg"
       }
@@ -621,43 +775,43 @@
     "slug": "vazy_a_amfory",
     "items": [
       {
-        "title": "Vázy a amfory",
-        "details": "Váza Radek Váza Karel Váza Váza s výřezem 4 litry strukturovaná z pece na dřevo 4 litry Váza Karel s výřezem Váza Karel glaz. s ušima Váza Karel ležatá glaz. Vázy z pece na dřevo strukturované 4 litry",
+        "title": "Váza Radek",
+        "details": "",
         "image": "images/katalog/drobnosti_vaza1.jpg"
       },
       {
-        "title": "Vázy a amfory",
+        "title": "Váza Karel",
         "details": "",
         "image": "images/katalog/drobnosti_vaza2.jpg"
       },
       {
-        "title": "Vázy a amfory",
-        "details": "",
+        "title": "Váza",
+        "details": "4 litry",
         "image": "images/katalog/vaza_4l.jpg"
       },
       {
-        "title": "Vázy a amfory",
-        "details": "",
+        "title": "Váza s výřezem",
+        "details": "strukturovaná z pece na dřevo 4 litry",
         "image": "images/katalog/vaza_4l_s_vyrezem_z_pece_na_drevo_struk.jpg"
       },
       {
-        "title": "Vázy a amfory",
+        "title": "Váza Karel s výřezem",
         "details": "",
         "image": "images/katalog/vaza_karel_dira.jpg"
       },
       {
-        "title": "Vázy a amfory",
+        "title": "Váza Karel glaz. s ušima",
         "details": "",
         "image": "images/katalog/vaza_karel_glaz_s_usima.jpg"
       },
       {
-        "title": "Vázy a amfory",
+        "title": "Váza Karel ležatá glaz.",
         "details": "",
         "image": "images/katalog/vaza_karel_lezata_glaz.jpg"
       },
       {
-        "title": "Vázy a amfory",
-        "details": "",
+        "title": "Vázy z pece na dřevo",
+        "details": "strukturované 4 litry",
         "image": "images/katalog/vazy_4l_z_pece_na_drevo_struk.jpg"
       }
     ]
@@ -667,42 +821,42 @@
     "slug": "jahodniky_a_petrzelaky",
     "items": [
       {
-        "title": "Jahodníky a petrželáky",
-        "details": "Jahodník glazovaný kapsa Jahodník glazovaný kapsa 2 litry 6 litrů 10 litrů 15 litrů 20 litrů 35 litrů Jahodník strukturovaný kapsa Jahodník strukturovaný kapsa 6 litrů 10 litrů 15 litrů 20 litrů 35 litrů Petrželák malý Petrželák velký Jahodník strukturovaný kapsa Jahodník glazovaný",
+        "title": "Jahodník glazovaný kapsa",
+        "details": "2 litry 6 litrů 10 litrů",
         "image": "images/katalog/jahodnik_glazovany_kapsa1.jpg"
       },
       {
-        "title": "Jahodníky a petrželáky",
-        "details": "",
+        "title": "Jahodník glazovaný kapsa",
+        "details": "15 litrů 20 litrů 35 litrů",
         "image": "images/katalog/jahodnik_glazovany_kapsa2.jpg"
       },
       {
-        "title": "Jahodníky a petrželáky",
-        "details": "",
+        "title": "Jahodník strukturovaný kapsa",
+        "details": "6 litrů 10 litrů",
         "image": "images/katalog/jahodnik_strukturovany_kapsa1.jpg"
       },
       {
-        "title": "Jahodníky a petrželáky",
-        "details": "",
+        "title": "Jahodník strukturovaný kapsa",
+        "details": "15 litrů 20 litrů 35 litrů",
         "image": "images/katalog/jahodnik_strukturovany_kapsa2.jpg"
       },
       {
-        "title": "Jahodníky a petrželáky",
+        "title": "Petrželák malý",
         "details": "",
         "image": "images/katalog/petrzelak_maly1.jpg"
       },
       {
-        "title": "Jahodníky a petrželáky",
+        "title": "Petrželák velký",
         "details": "",
         "image": "images/katalog/petrzelak_velky1.jpg"
       },
       {
-        "title": "Jahodníky a petrželáky",
+        "title": "Jahodník strukturovaný kapsa",
         "details": "",
         "image": "images/katalog/jahodnik_strukturovany_kapsa3.jpg"
       },
       {
-        "title": "Jahodníky a petrželáky",
+        "title": "Jahodník glazovaný",
         "details": "",
         "image": "images/katalog/jahodnik_glazovany_kapsa3.jpg"
       }
@@ -714,16 +868,16 @@
     "items": [
       {
         "title": "Košíky s uchem",
-        "details": "Košíky s uchem Košík 1 Košík 2",
+        "details": "",
         "image": "images/katalog/kose_s_uchem.jpg"
       },
       {
-        "title": "Košíky s uchem",
+        "title": "Košík 1",
         "details": "",
-        "image": "images/katalog/kos_%20s_uchem2.jpg"
+        "image": "images/katalog/kos_ s_uchem2.jpg"
       },
       {
-        "title": "Košíky s uchem",
+        "title": "Košík 2",
         "details": "",
         "image": "images/katalog/kos_s_uchem3.jpg"
       }
@@ -734,23 +888,23 @@
     "slug": "kvetinace_z_hrncu",
     "items": [
       {
-        "title": "Květináče z hrnců",
-        "details": "Květináč cokovaný Květináč cokovaný 0,5 litru až 6 litrů 0,5 litru až 6 litrů Květináč hnědý Květináč strukturovaný tvar mléčný hrnec 0,5 litru až 6 litrů tvar mléčný hrnec 0,5 litru až 6 litrů",
+        "title": "Květináč cokovaný",
+        "details": "0,5 litru až 6 litrů",
         "image": "images/katalog/kvetinace_z_hrncu1.jpg"
       },
       {
-        "title": "Květináče z hrnců",
-        "details": "",
+        "title": "Květináč cokovaný",
+        "details": "0,5 litru až 6 litrů",
         "image": "images/katalog/kvetinace_z_hrncu2.jpg"
       },
       {
-        "title": "Květináče z hrnců",
-        "details": "",
+        "title": "Květináč hnědý",
+        "details": "tvar mléčný hrnec 0,5 litru až 6 litrů",
         "image": "images/katalog/kvetinac_mlecny_hrnec_3l_hnedy.jpg"
       },
       {
-        "title": "Květináče z hrnců",
-        "details": "",
+        "title": "Květináč strukturovaný",
+        "details": "tvar mléčný hrnec 0,5 litru až 6 litrů",
         "image": "images/katalog/kvetinac_mlecny_hrnec_strukturovany_4l.jpg"
       }
     ]
